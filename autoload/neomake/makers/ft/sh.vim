@@ -5,7 +5,7 @@ function! neomake#makers#ft#sh#EnabledMakers() abort
 endfunction
 
 let s:shellcheck = {
-        \ 'args': ['-fgcc', '-x'],
+        \ 'args': ['-fgcc'],
         \ 'errorformat':
             \ '%f:%l:%c: %trror: %m [SC%n],' .
             \ '%f:%l:%c: %tarning: %m [SC%n],' .
